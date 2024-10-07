@@ -52,6 +52,35 @@ The dataset was obtained from Maven Analytics. It comprises four primary tables 
    - Deal Stage: The current stage in the sales pipeline (prospecting > engaging > won > lost).
    - Engage Date: The date the deal entered the 'Engaging' stage.
    - Close Date: The date the deal was either won or lost.
-   - Close Value: The revenue generated from the sale if the deal is won.
+   - Close Value: The revenue generated from the sale if the deal is won
+
+# Data Normalization
+The sales pipeline table, dated between October 2016 to December 2017, contains approximately 1,425 missing values in the account column, which were left as empty spaces. The following data cleaning processes were carried out on the data.
+
+- Standardized the product name by replacing "GTXPro" with "GTX Pro" in the sales pipeline table.
+
+- Used the first row as headers in the sales teams table for proper column alignment.
+
+- Added an "account age" column to the accounts table, and changed its data type to a whole number for accurate representation.
+
+- Added a "days to close" column in the sales pipeline table to track the number of days it took for deals to close.
+
+- Renamed the "sector" column in the accounts table to proper case using a custom column for consistency in formatting.
 
 
+# Merging Queries
+I merged the sales pipeline table with the products table using an inner join on the product column, resulting in a new query named "CRM Sales." The newly added columns were renamed and repositioned for clarity. Next, the CRM Sales table was merged with the sales teams table, again using an inner join on the sales agent column. The newly added columns were also renamed and repositioned. The CRM Sales table was not merged with the accounts table due to the missing values in its account column, which could impact key analyses such as total potential sales. Rather, I chose to create a relationship between the two tables.
+
+# Data Modeling
+For data modeling, two date tables were added—one for the engage date and one for the close date. These tables were joined to the CRM Sales table using a one-to-many cardinality on their respective date columns. Additionally, the accounts table was connected to the CRM Sales table using the account column, also with a one-to-many cardinality. This structured approach ensures clean data, accurate relationships, and optimized performance for downstream analysis and reporting.
+
+# Dashboard Design Thinking
+When designing the dashboard for this analysis, the primary focus was on creating a user-friendly, interactive interface that enables managers to quickly access key insights and trends for their team. The design emphasizes clarity, efficiency, and the ability to drill down into more detailed views when necessary. Here are the design considerations for the overall Layout:
+
+- Top-level summary section: The dashboard begins with a high-level summary that provides key performance indicators (KPIs) such as total sales revenue, average days to close, the number of won deals, and discounted sales percentage. This section will allow users to grasp the most critical metrics at a glance.
+
+- Slicers: Interactive slicers are positioned prominently to allow users to drill down by the team manager. 
+
+- Information Page: An information page was provided to help managers navigate the dashboard, for those who aren't familiar with power bi business intelligence tool. Also, the page defines key metrics to avoid assumptions and confusions. 
+
+- Main Visuals: The dashboard will be divided into multiple visual elements that focus on different aspects of the data: such as the overview page, sales performance page, manager performance page, product performance page, and the lead performance analysis page. These visuals should support both aggregated and detailed views to assist in identifying actionable insights.
