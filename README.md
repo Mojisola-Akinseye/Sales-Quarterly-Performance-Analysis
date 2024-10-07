@@ -87,6 +87,9 @@ When designing the dashboard for this analysis, the primary focus was on creatin
 
 # Descriptive Analysis
 ## Qquarter Overview Performance Page:
+
+![CRM-Sales-2](https://github.com/user-attachments/assets/c07c8bc7-1252-414a-93a7-c8c772419888)
+
 The overview page of the dashboard features a personalized welcome message that activates when a manager's name is selected. This personalization enhances the user experience, making it more engaging and easier for managers to navigate and explore the data. To streamline navigation, icons have been incorporated to provide quick access to different sections of the dashboard. This improves usability by enabling faster exploration of key insights, enhancing overall efficiency.
 
 Custom DAX measures were developed to track critical KPIs such as total sales, average weeks to close, won deals, and discounted sales, focusing specifically on Q4 2017 performance. By isolating this quarter, the analysis offers a detailed view of recent performance, helping managers assess strengths and areas for improvement during that period.
@@ -98,6 +101,9 @@ A table summarizing sales agent performance across the various metrics is includ
 Lastly, a potential sales bar chart, powered by a DAX measure, has been added to help managers identify products with the most open opportunities for sales. This visualization assists in prioritizing products with high sales potential, enabling managers to allocate resources more effectively and focus on areas with the highest returns.
 
 ## Quarter Sales Performance Analysis Page:
+
+![CRM-Sales-3](https://github.com/user-attachments/assets/b302e9be-ddf0-4733-b44b-55b856d08afd)
+
 This page provides a comprehensive breakdown of total sales by sector and account, enabling managers to identify industries and accounts with the highest demand for their products. Understanding where the largest sales volumes originate allows for more effective resource allocation, strategic focus on high-demand sectors, and identification of growth opportunities in underperforming areas.
 
 Additionally, a quarterly sales trend has been incorporated, along with details on quarter-over-quarter growth percentages. This metric highlights the rate of sales growth or decline between quarters, providing valuable insights into overall performance.
@@ -105,6 +111,9 @@ Additionally, a quarterly sales trend has been incorporated, along with details 
 To further enhance visibility into the sales process, a stacked column chart illustrates the sales opportunity funnel from the engagement stage throughout the quarter. This visualization shows the progression of sales opportunities across various stages of the funnel (e.g., from engagement to closing). It allows managers to monitor how opportunities are advancing through the pipeline and identify potential bottlenecks. By focusing on stages where deals may be stalling, managers can implement strategies to improve the overall sales conversion rate.
 
 ## Manager Performance Analysis Page:
+
+![CRM-Sales-4](https://github.com/user-attachments/assets/dced27bf-c26e-4671-b44a-68cdd02833f4)
+
 This page provides a detailed overview of how a manager's team ranks against other teams. It measures team performance relative to peers, fostering healthy competition and helping identify strengths and areas for improvement. This analysis empowers managers to evaluate their team’s performance through the following key metrics:
 
 - Total Sales: Assesses the team’s revenue contributions compared to others, offering insights into overall effectiveness.
@@ -115,6 +124,9 @@ This page provides a detailed overview of how a manager's team ranks against oth
 - Average Sales: Offers insights into deal values, revealing whether the team focuses on high-value transactions or a greater volume of smaller deals.
 
 ## Product Performance Analysis Page:
+
+![CRM-Sales-5](https://github.com/user-attachments/assets/efc63d56-a8ce-40bb-9f76-cbc18a877164)
+
 This page presents total sales by product for Q4, highlighting best-selling products and those that are underperforming. This insight enables the team to concentrate efforts on high-demand products. 
 
 A scatter plot has been included to identify any potential relationship between the average time to close deals (in days) and total sales by product. A lack of correlation between these variables may indicate inefficiencies in the sales process, suggesting that longer closure times do not necessarily lead to higher sales. This points to potential wasted time and financial losses, underscoring the need for process improvements.
@@ -122,6 +134,9 @@ A scatter plot has been included to identify any potential relationship between 
 Additionally, a line chart displays the top three products by win rates throughout the quarter. A brief overview of each product's performance is provided based on key metrics such as sales, win rates, and time to close. This summary allows the team to quickly identify strengths and weaknesses across their product line, informing strategic decisions to enhance the performance of underperforming products while capitalizing on top sellers.
 
 ## Lead Performance Analysis Page:
+
+![CRM-Sales-6](https://github.com/user-attachments/assets/7678eae9-627d-4c98-ad22-8825512eaf28)
+
 A tornado chart has been included to illustrate the comparison of won versus lost deals by sector. This visual representation highlights which sectors are performing well and identifies areas where sales efforts may be lacking. It enables managers to focus on enhancing sales strategies in underperforming sectors.
 
 Additionally, two tables have been provided to summarize concluded deals and potential sales opportunities. These tables offer a clear overview of closed deals and upcoming sales prospects, equipping managers with insights into past performance and future opportunities. This information aids in tracking success rates and identifying sectors or clients with untapped potential, facilitating more targeted sales efforts.
